@@ -1,11 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using ShopOnline.Data.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<ShopOnlineDBContext>(opts =>
+    opts.UseSqlServer(builder.Configuration.GetConnectionString("ShopOnlineConnections"))
+    .EnableSensitiveDataLogging()
+    .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 
 var app = builder.Build();
 
