@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Web", "ShopOnline.Web\ShopOnline.Web.csproj", "{2068A374-E2AD-4285-B32C-D282A5F8DAA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Web", "ShopOnline.Web\ShopOnline.Web.csproj", "{2068A374-E2AD-4285-B32C-D282A5F8DAA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Api", "ShopOnline.Api\ShopOnline.Api.csproj", "{1A9D6B1B-ADA0-4FD2-BF14-09F47C14E520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Api", "ShopOnline.Api\ShopOnline.Api.csproj", "{1A9D6B1B-ADA0-4FD2-BF14-09F47C14E520}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Domain", "ShopOnline.Domain\ShopOnline.Domain.csproj", "{49A95C52-7698-407D-B631-39B6D233A9E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Domain", "ShopOnline.Domain\ShopOnline.Domain.csproj", "{49A95C52-7698-407D-B631-39B6D233A9E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Data", "ShopOnline.Data\ShopOnline.Data.csproj", "{3B834EBF-DB9C-47AB-BD76-7142ED9ACDD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Data", "ShopOnline.Data\ShopOnline.Data.csproj", "{3B834EBF-DB9C-47AB-BD76-7142ED9ACDD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

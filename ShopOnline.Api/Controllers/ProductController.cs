@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShopOnline.Api.DTO;
 using ShopOnline.Data.Repositories.Contracts;
 using ShopOnline.Api.Extensions;
+using ShopOnline.Data.DTO;
 
 namespace ShopOnline.Api.Controllers;
 
@@ -40,7 +40,6 @@ public class ProductController : ControllerBase
         {
             return StatusCode(StatusCodes.Status500InternalServerError,
                             "Error retrieving data from the database");
-
         }
     }
 }

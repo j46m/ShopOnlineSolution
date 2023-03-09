@@ -1,4 +1,4 @@
-﻿namespace ShopOnline.Api.DTO
+﻿namespace ShopOnline.Data.DTO
 {
     public class ProductCategoryDto
     {
