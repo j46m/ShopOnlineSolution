@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ShopOnline.Data.Context;
+using ShopOnline.Data.Repositories;
+using ShopOnline.Data.Repositories.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,9 +15,10 @@ builder.Services.AddDbContext<ShopOnlineDBContext>(opts =>
     .EnableSensitiveDataLogging()
     .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
