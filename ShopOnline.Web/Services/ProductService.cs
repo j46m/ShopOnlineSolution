@@ -26,14 +26,14 @@ namespace ShopOnline.Web.Services
                         return Enumerable.Empty<ProductDto>();
                     }
 
-                    return await response.Content.ReadFromJsonAsync<IEnumerable<ProductDto>>() ?? Array.Empty<ProductDto>();
+                    return await response.Content.ReadFromJsonAsync<IEnumerable<ProductDto>>();
                 }
 
                 var message = await response.Content.ReadAsStringAsync();
                 throw new Exception($"Http status code: {response.StatusCode} message: {message}");
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 //Log exception
                 throw;
